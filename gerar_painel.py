@@ -30,27 +30,49 @@ def gerar():
     for x,c in [(27,'#ed6a5e'),(49,'#f4bf4f'),(71,'#61c554')]:
         parts.append(f'<circle cx="{x}" cy="28" r="6" fill="{c}"/>')
     text(99,34,'eusouisidoro1 / README', '#90a7b6',14)
-    # Original octopus drawn as SVG geometry with a terminal character texture.
-    parts.append('<defs><pattern id="ink" width="12" height="14" patternUnits="userSpaceOnUse"><text x="0" y="11" font-family="monospace" font-size="12" fill="#94d6ed">@</text></pattern></defs>')
-    tentacles = [
-        'M193 338 C140 380 110 302 73 354 C37 409 120 424 113 467 C109 496 58 487 58 456',
-        'M210 362 C167 403 204 458 153 490 C116 514 94 544 128 557',
-        'M231 375 C203 429 259 474 218 522 C197 550 180 560 195 577',
-        'M249 375 C237 430 295 449 274 504 C258 546 279 565 303 543',
-        'M268 373 C301 410 295 460 334 485 C369 510 366 551 337 552',
-        'M282 358 C335 372 349 415 386 424 C428 434 449 407 433 387',
-        'M292 342 C346 327 357 294 399 317 C427 332 432 366 409 372',
-        'M180 324 C128 333 121 276 85 286 C45 296 42 334 65 343',
+    # The octopus consists exclusively of individual text glyphs.
+    # Sample curved arms onto a character grid; no filled shapes or outlines.
+    curves = [
+        [(193,338),(140,380),(110,302),(73,354),(37,409),(120,424),(113,467),(109,496),(58,487),(58,456)],
+        [(210,362),(167,403),(204,458),(153,490),(116,514),(94,544),(128,557)],
+        [(231,375),(203,429),(259,474),(218,522),(197,550),(180,560),(195,577)],
+        [(249,375),(237,430),(295,449),(274,504),(258,546),(279,565),(303,543)],
+        [(268,373),(301,410),(295,460),(334,485),(369,510),(366,551),(337,552)],
+        [(282,358),(335,372),(349,415),(386,424),(428,434),(449,407),(433,387)],
+        [(292,342),(346,327),(357,294),(399,317),(427,332),(432,366),(409,372)],
+        [(180,324),(128,333),(121,276),(85,286),(45,296),(42,334),(65,343)],
     ]
-    for d in tentacles:
-        parts.append(f'<path d="{d}" fill="none" stroke="#78bed9" stroke-width="19" stroke-linecap="round"/>')
-        parts.append(f'<path d="{d}" fill="none" stroke="#172e3c" stroke-width="5" stroke-dasharray="2 10" stroke-linecap="round"/>')
-    parts.append('<path d="M170 300 C132 203 166 136 232 133 C315 128 344 218 300 307 L289 355 Q237 400 181 352 Z" fill="#173444" stroke="#94d6ed" stroke-width="2"/>')
-    parts.append('<path d="M170 300 C132 203 166 136 232 133 C315 128 344 218 300 307 L289 355 Q237 400 181 352 Z" fill="url(#ink)"/>')
-    for x in (202,270):
-        parts.append(f'<ellipse cx="{x}" cy="295" rx="19" ry="23" fill="#101820"/><ellipse cx="{x}" cy="295" rx="9" ry="13" fill="#d9f3fc"/>')
+    samples = []
+    for curve in curves:
+        points = []
+        for i in range(0,len(curve)-1,3):
+            a,b,c,d = curve[i:i+4]
+            for step in range(61):
+                t = step/60
+                points.append(tuple((1-t)**3*a[k]+3*(1-t)**2*t*b[k]+3*(1-t)*t*t*c[k]+t**3*d[k] for k in (0,1)))
+        for i,(x,y) in enumerate(points):
+            samples.append((x,y,14-8*i/len(points)))
+    for row in range(47):
+        y = 123+row*10
+        for col in range(69):
+            x = 36+col*6
+            head = ((x-237)/83)**2+((y-251)/119)**2
+            depth = max((1-((x-px)**2+(y-py)**2)**.5/r for px,py,r in samples),default=-1)
+            eye = any(((x-ex)/18)**2+((y-286)/23)**2 < 1 for ex in (205,270))
+            if eye:
+                char = '0' if any(((x-ex)/6)**2+((y-288)/11)**2 < 1 for ex in (208,273)) else ' '
+            elif head < 1:
+                char = '0' if head < .82 else (':' if head > .96 else 'o')
+                if head < .82 and (row+col)%7 == 0:
+                    char = '@'
+            elif depth > 0:
+                char = '0' if depth > .28 else ('.' if depth < .10 else 'o')
+            else:
+                char = ' '
+            if char != ' ':
+                text(x,y,char,'#acd4e5',10)
     text(112,620,'$ hello, world.', '#83c9f4',16)
-    text(500,105,'robson@isidoro', '#e3edf5',25)
+    text(500,105,'@eusouisidoro1', '#e3edf5',25)
     text(500,134,'─────────────────────────────────────────','#405b6b',16)
     def field(y,label,value):
         text(500,y,label,'#f0b477',16)
