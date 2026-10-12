@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+<title id="title">Robson Isidoro — profile</title>
+<desc id="desc">Octopus terminal art, age, Anthropic courses and projects.</desc>
+<rect width="1200" height="680" rx="18" fill="#101820"/>
+<path d="M0 55H1200" stroke="#304451"/>
+<circle cx="27" cy="28" r="6" fill="#ed6a5e"/>
+<circle cx="49" cy="28" r="6" fill="#f4bf4f"/>
+<circle cx="71" cy="28" r="6" fill="#61c554"/>
+<text x="99" y="34" fill="#90a7b6" font-family="monospace" font-size="14" xml:space="preserve">eusouisidoro1 / README</text>
+<defs><pattern id="ink" width="12" height="14" patternUnits="userSpaceOnUse"><text x="0" y="11" font-family="monospace" font-size="12" fill="#94d6ed">@</text></pattern></defs>
+<path d="M193 338 C140 380 110 302 73 354 C37 409 120 424 113 467 C109 496 58 487 58 456" fill="none" stroke="#78bed9" stroke-width="19" stroke-linecap="round"/>
+<path d="M193 338 C140 380 110 302 73 354 C37 409 120 424 113 467 C109 496 58 487 58 456" fill="none" stroke="#172e3c" stroke-width="5" stroke-dasharray="2 10" stroke-linecap="round"/>
+<path d="M210 362 C167 403 204 458 153 490 C116 514 94 544 128 557" fill="none" stroke="#78bed9" stroke-width="19" stroke-linecap="round"/>
+<path d="M210 362 C167 403 204 458 153 490 C116 514 94 544 128 557" fill="none" stroke="#172e3c" stroke-width="5" stroke-dasharray="2 10" stroke-linecap="round"/>
+<path d="M231 375 C203 429 259 474 218 522 C197 550 180 560 195 577" fill="none" stroke="#78bed9" stroke-width="19" stroke-linecap="round"/>
+<path d="M231 375 C203 429 259 474 218 522 C197 550 180 560 195 577" fill="none" stroke="#172e3c" stroke-width="5" stroke-dasharray="2 10" stroke-linecap="round"/>
+<path d="M249 375 C237 430 295 449 274 504 C258 546 279 565 303 543" fill="none" stroke="#78bed9" stroke-width="19" stroke-linecap="round"/>
+<path d="M249 375 C237 430 295 449 274 504 C258 546 279 565 303 543" fill="none" stroke="#172e3c" stroke-width="5" stroke-dasharray="2 10" stroke-linecap="round"/>
+<path d="M268 373 C301 410 295 460 334 485 C369 510 366 551 337 552" fill="none" stroke="#78bed9" stroke-width="19" stroke-linecap="round"/>
+<path d="M268 373 C301 410 295 460 334 485 C369 510 366 551 337 552" fill="none" stroke="#172e3c" stroke-width="5" stroke-dasharray="2 10" stroke-linecap="round"/>
+<path d="M282 358 C335 372 349 415 386 424 C428 434 449 407 433 387" fill="none" stroke="#78bed9" stroke-width="19" stroke-linecap="round"/>
+<path d="M282 358 C335 372 349 415 386 424 C428 434 449 407 433 387" fill="none" stroke="#172e3c" stroke-width="5" stroke-dasharray="2 10" stroke-linecap="round"/>
+<path d="M292 342 C346 327 357 294 399 317 C427 332 432 366 409 372" fill="none" stroke="#78bed9" stroke-width="19" stroke-linecap="round"/>
+<path d="M292 342 C346 327 357 294 399 317 C427 332 432 366 409 372" fill="none" stroke="#172e3c" stroke-width="5" stroke-dasharray="2 10" stroke-linecap="round"/>
+<path d="M180 324 C128 333 121 276 85 286 C45 296 42 334 65 343" fill="none" stroke="#78bed9" stroke-width="19" stroke-linecap="round"/>
+<path d="M180 324 C128 333 121 276 85 286 C45 296 42 334 65 343" fill="none" stroke="#172e3c" stroke-width="5" stroke-dasharray="2 10" stroke-linecap="round"/>
+<path d="M170 300 C132 203 166 136 232 133 C315 128 344 218 300 307 L289 355 Q237 400 181 352 Z" fill="#173444" stroke="#94d6ed" stroke-width="2"/>
+<path d="M170 300 C132 203 166 136 232 133 C315 128 344 218 300 307 L289 355 Q237 400 181 352 Z" fill="url(#ink)"/>
+<ellipse cx="202" cy="295" rx="19" ry="23" fill="#101820"/><ellipse cx="202" cy="295" rx="9" ry="13" fill="#d9f3fc"/>
+<ellipse cx="270" cy="295" rx="19" ry="23" fill="#101820"/><ellipse cx="270" cy="295" rx="9" ry="13" fill="#d9f3fc"/>
+<text x="112" y="620" fill="#83c9f4" font-family="monospace" font-size="16" xml:space="preserve">$ hello, world.</text>
+<text x="500" y="105" fill="#e3edf5" font-family="monospace" font-size="25" xml:space="preserve">robson@isidoro</text>
+<text x="500" y="134" fill="#405b6b" font-family="monospace" font-size="16" xml:space="preserve">─────────────────────────────────────────</text>
+<text x="500" y="170" fill="#f0b477" font-family="monospace" font-size="16" xml:space="preserve">Name</text>
+<text x="671" y="170" fill="#a9d9f8" font-family="monospace" font-size="16" xml:space="preserve">Robson Isidoro</text>
+<text x="500" y="201" fill="#f0b477" font-family="monospace" font-size="16" xml:space="preserve">Age</text>
+<text x="671" y="201" fill="#a9d9f8" font-family="monospace" font-size="16" xml:space="preserve">36 years, 209 days, 23 hours</text>
+<text x="500" y="232" fill="#f0b477" font-family="monospace" font-size="16" xml:space="preserve">Born</text>
+<text x="671" y="232" fill="#a9d9f8" font-family="monospace" font-size="16" xml:space="preserve">March 16, 1990</text>
+<text x="500" y="263" fill="#f0b477" font-family="monospace" font-size="16" xml:space="preserve">GitHub</text>
+<text x="671" y="263" fill="#a9d9f8" font-family="monospace" font-size="16" xml:space="preserve">@eusouisidoro1</text>
+<text x="500" y="309" fill="#e3edf5" font-family="monospace" font-size="17" xml:space="preserve">Learning ─────────────────────────────</text>
+<text x="500" y="344" fill="#f0b477" font-family="monospace" font-size="16" xml:space="preserve">Anthropic</text>
+<text x="671" y="344" fill="#a9d9f8" font-family="monospace" font-size="16" xml:space="preserve">22 completed courses</text>
+<text x="500" y="375" fill="#f0b477" font-family="monospace" font-size="16" xml:space="preserve">Topics</text>
+<text x="671" y="375" fill="#a9d9f8" font-family="monospace" font-size="16" xml:space="preserve">Claude, API, MCP &amp; agents</text>
+<text x="500" y="406" fill="#f0b477" font-family="monospace" font-size="16" xml:space="preserve">Applications</text>
+<text x="671" y="406" fill="#a9d9f8" font-family="monospace" font-size="16" xml:space="preserve">AI fluency, cloud &amp; business</text>
+<text x="500" y="452" fill="#e3edf5" font-family="monospace" font-size="17" xml:space="preserve">Projects ────────────────────────────────</text>
+<text x="500" y="487" fill="#f0b477" font-family="monospace" font-size="16" xml:space="preserve">Conexão Viva</text>
+<text x="671" y="487" fill="#a9d9f8" font-family="monospace" font-size="16" xml:space="preserve">Connection monitoring</text>
+<text x="500" y="518" fill="#f0b477" font-family="monospace" font-size="16" xml:space="preserve">Pereira</text>
+<text x="671" y="518" fill="#a9d9f8" font-family="monospace" font-size="16" xml:space="preserve">School website</text>
+<text x="500" y="596" fill="#90a7b6" font-family="monospace" font-size="12" xml:space="preserve">Timezone: America/Sao_Paulo</text>
+<text x="500" y="622" fill="#90a7b6" font-family="monospace" font-size="12" xml:space="preserve">Updated 2026-10-11 at 23:33</text>
+</svg>

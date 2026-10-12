@@ -1,0 +1,31 @@
+name: Atualizar idade do perfil
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - gerar_painel.py
+      - salto.json
+      - .github/workflows/atualizar-perfil.yml
+permissions:
+  contents: write
+concurrency:
+  group: atualizar-perfil
+  cancel-in-progress: false
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gerar painel
+        run: python3 gerar_painel.py
+      - name: Salvar atualização
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add painel.svg
+          if ! git diff --cached --quiet; then
+            git commit -m 'Atualiza idade no painel'
+            git push
+          fi
